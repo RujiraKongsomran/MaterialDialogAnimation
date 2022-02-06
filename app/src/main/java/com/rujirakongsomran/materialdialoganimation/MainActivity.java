@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         MaterialDialog mDialog = new MaterialDialog.Builder(this)
+                .setAnimation(R.raw.delete)
                 .setTitle("Delete?")
                 .setMessage("Are you sure want to delete this file?")
                 .setCancelable(false)
